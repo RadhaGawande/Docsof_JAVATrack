@@ -1,0 +1,55 @@
+1)What is Maven? and Its Usage
+Maven is a Build tool 
+it is Project Management tool 
+compiling source code
+Maven also Manages the dependencies
+
+
+2)How to create a Maven Project?
+Goto file in Eclipse
+New-->Maven Project
+if you don't see the option of Maven then
+Goto other & serach Maven select Maven Project
+Next give the default option as it is
+select archetype - org.apache.maevn.archetype maven-archetype-quickstart 
+next 
+enter GroupId % ArtiFactId
+by default there is name of package change it and finish.
+
+
+3)Which commands we are using in cmd for Maven?
+Command Purpose:-Building the maven project from commandline.
+
+For Creating Project through cmd-:
+mvn archetype:generate -DgroupId=com.bharti -DartifactId=hellomaven -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+For executing maven Project on cmd-:
+goto directory of project 
+cd projectname
+mvn install
+-> Jar will be created
+now for executing jar file inside the project we use the command -: java -cp target/jar file name(.jar)
+
+
+4)Maven Life Cycle?
+
+Maven Coordinates-:
+groupId
+artifactId
+packaging
+version
+
+Life Cycle Phases:-
+mvn install 
+
+ process-resources                      resources:resources
+
+compile                                 compiler:compiler
+
+test                                     sourcefire:test
+
+package                                    jar:jar
+
+package are of two types:- 
+jar:jar
+war:war

@@ -13,7 +13,7 @@ Goto other & serach Maven select Maven Project
 Next give the default option as it is
 select archetype - org.apache.maevn.archetype maven-archetype-quickstart 
 next 
-enter GroupId % ArtiFactId
+enter GroupId & ArtiFactId
 by default there is name of package change it and finish.
 
 
@@ -42,7 +42,7 @@ version
 Life Cycle Phases:-
 mvn install 
 
- process-resources                      resources:resources
+process-resources                      resources:resources
 
 compile                                 compiler:compiler
 
